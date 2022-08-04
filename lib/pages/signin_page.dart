@@ -2,8 +2,8 @@ import 'package:dra_office_app/pages/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class SignIn extends StatelessWidget {
-  const SignIn({Key? key}) : super(key: key);
+class SignInPage extends StatelessWidget {
+  const SignInPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,125 +16,105 @@ class SignIn extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(50, 50, 50, 50),
+            padding: const EdgeInsets.fromLTRB(50, 0, 50, 20),
             child: Column(
               children: [
                 Image.asset(
                   'assets/images/257524.jpg',
-                  fit: BoxFit.fill,
                   height: 100,
                   width: 120,
+                  fit: BoxFit.cover,
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
-                const Center(
-                  child: Text(
-                    "Welcome back!",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                  ),
+                const Text(
+                  "Welcome back!",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 const Text('Login to your account'),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 SizedBox(
                   height: 70,
                   child: Stack(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10, left: 40),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30),
-                          boxShadow: const [
-                            BoxShadow(
-                                spreadRadius: 1,
-                                color: Colors.greenAccent,
-                                offset: Offset(0, 4),
-                                blurRadius: 6)
-                          ],
-                        ),
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(30),
                         child: TextFormField(
                           decoration: const InputDecoration(
                               hintText: "Username",
-                              contentPadding: EdgeInsets.only(left: 42),
+                              contentPadding: EdgeInsets.only(left: 40),
                               border: InputBorder.none),
                         ),
                       ),
                     ),
                     Container(
-                      decoration: const BoxDecoration(boxShadow: [
-                        BoxShadow(
-                            spreadRadius: 2,
-                            color: Colors.greenAccent,
-                            offset: Offset(0.1, 1),
-                            blurRadius: 10)
-                      ], shape: BoxShape.circle, color: Colors.white),
                       height: 70,
                       width: 70,
-                      child: const Icon(
-                        Icons.man_outlined,
-                        color: Colors.greenAccent,
-                        size: 40,
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(60),
+                        child: const Icon(
+                          Icons.man_outlined,
+                          color: Colors.greenAccent,
+                          size: 34,
+                        ),
                       ),
                     ),
                   ]),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 SizedBox(
                   height: 70,
                   child: Stack(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10, left: 40),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30),
-                          boxShadow: const [
-                            BoxShadow(
-                                spreadRadius: 1,
-                                color: Colors.greenAccent,
-                                offset: Offset(0, 4),
-                                blurRadius: 6)
-                          ],
-                        ),
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(30),
                         child: TextFormField(
                           obscureText: true,
-                          autocorrect: false,
-                          enableSuggestions: false,
                           decoration: const InputDecoration(
                               hintText: "Password",
-                              contentPadding: EdgeInsets.only(left: 42),
+                              contentPadding: EdgeInsets.only(left: 40),
                               border: InputBorder.none),
                         ),
                       ),
                     ),
                     Container(
-                      decoration: const BoxDecoration(boxShadow: [
-                        BoxShadow(
-                            spreadRadius: 2,
-                            color: Colors.greenAccent,
-                            offset: Offset(0.1, 1),
-                            blurRadius: 10)
-                      ], shape: BoxShape.circle, color: Colors.white),
                       height: 70,
                       width: 70,
-                      child: const Icon(
-                        Icons.lock,
-                        color: Colors.greenAccent,
-                        size: 40,
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(60),
+                        child: const Icon(
+                          Icons.lock,
+                          color: Colors.greenAccent,
+                          size: 34,
+                        ),
                       ),
                     ),
                   ]),
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 SizedBox(
                   width: 120,
@@ -152,7 +132,7 @@ class SignIn extends StatelessWidget {
                       )),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -162,7 +142,7 @@ class SignIn extends StatelessWidget {
                         onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
-                            return const SignUp();
+                            return SignUp();
                           }));
                         },
                         child: const Text(

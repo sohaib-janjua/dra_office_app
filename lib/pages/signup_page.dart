@@ -45,40 +45,32 @@ class SignUp extends StatelessWidget {
                   child: Stack(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10, left: 40),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30),
-                          boxShadow: const [
-                            BoxShadow(
-                                spreadRadius: 1,
-                                color: Colors.greenAccent,
-                                offset: Offset(0, 4),
-                                blurRadius: 6)
-                          ],
-                        ),
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(30),
                         child: TextFormField(
                           decoration: const InputDecoration(
                               hintText: "Username",
-                              contentPadding: EdgeInsets.only(left: 42),
+                              contentPadding: EdgeInsets.only(left: 40),
                               border: InputBorder.none),
                         ),
                       ),
                     ),
                     Container(
-                      decoration: const BoxDecoration(boxShadow: [
-                        BoxShadow(
-                            spreadRadius: 2,
-                            color: Colors.greenAccent,
-                            offset: Offset(0.1, 1),
-                            blurRadius: 10)
-                      ], shape: BoxShape.circle, color: Colors.white),
                       height: 70,
                       width: 70,
-                      child: const Icon(
-                        Icons.man_outlined,
-                        color: Colors.greenAccent,
-                        size: 40,
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(60),
+                        child: const Icon(
+                          Icons.man_outlined,
+                          color: Colors.greenAccent,
+                          size: 34,
+                        ),
                       ),
                     ),
                   ]),
@@ -91,40 +83,32 @@ class SignUp extends StatelessWidget {
                   child: Stack(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10, left: 40),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30),
-                          boxShadow: const [
-                            BoxShadow(
-                                spreadRadius: 1,
-                                color: Colors.greenAccent,
-                                offset: Offset(0, 4),
-                                blurRadius: 6)
-                          ],
-                        ),
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(30),
                         child: TextFormField(
                           decoration: const InputDecoration(
                               hintText: "Email",
-                              contentPadding: EdgeInsets.only(left: 42),
+                              contentPadding: EdgeInsets.only(left: 40),
                               border: InputBorder.none),
                         ),
                       ),
                     ),
                     Container(
-                      decoration: const BoxDecoration(boxShadow: [
-                        BoxShadow(
-                            spreadRadius: 2,
-                            color: Colors.greenAccent,
-                            offset: Offset(0.1, 1),
-                            blurRadius: 10)
-                      ], shape: BoxShape.circle, color: Colors.white),
                       height: 70,
                       width: 70,
-                      child: const Icon(
-                        Icons.mail,
-                        color: Colors.greenAccent,
-                        size: 40,
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(60),
+                        child: const Icon(
+                          Icons.email,
+                          color: Colors.greenAccent,
+                          size: 34,
+                        ),
                       ),
                     ),
                   ]),
@@ -137,46 +121,39 @@ class SignUp extends StatelessWidget {
                   child: Stack(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10, left: 40),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30),
-                          boxShadow: const [
-                            BoxShadow(
-                                spreadRadius: 1,
-                                color: Colors.greenAccent,
-                                offset: Offset(0, 4),
-                                blurRadius: 6)
-                          ],
-                        ),
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(30),
                         child: TextFormField(
                           obscureText: true,
-                          autocorrect: false,
-                          enableSuggestions: false,
                           decoration: const InputDecoration(
                               hintText: "Password",
-                              contentPadding: EdgeInsets.only(left: 42),
+                              contentPadding: EdgeInsets.only(left: 40),
                               border: InputBorder.none),
                         ),
                       ),
                     ),
                     Container(
-                      decoration: const BoxDecoration(boxShadow: [
-                        BoxShadow(
-                            spreadRadius: 2,
-                            color: Colors.greenAccent,
-                            offset: Offset(0.1, 1),
-                            blurRadius: 10)
-                      ], shape: BoxShape.circle, color: Colors.white),
                       height: 70,
                       width: 70,
-                      child: const Icon(
-                        Icons.lock,
-                        color: Colors.greenAccent,
-                        size: 40,
+                      child: Material(
+                        color: Colors.white,
+                        elevation: 10,
+                        shadowColor: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(60),
+                        child: const Icon(
+                          Icons.lock,
+                          color: Colors.greenAccent,
+                          size: 34,
+                        ),
                       ),
                     ),
                   ]),
+                ),
+                const SizedBox(
+                  height: 20,
                 ),
                 SizedBox(
                   width: 120,
